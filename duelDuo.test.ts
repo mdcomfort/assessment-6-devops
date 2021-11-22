@@ -29,7 +29,7 @@ test('Clicking the "Draw" button displays choices', async () => {
     expect(displayed).toBe(true)
 })
 
-test('Clicking an “Add to Duo” button displays player id', async () => {
+test('Clicking an “Add to Duo” button displays player duo', async () => {
     const draw = await driver.findElement(By.id("draw"))
     draw.click()
     await driver.sleep(2000)
